@@ -235,6 +235,22 @@ console.log( string1.toUpperCase() )
 //Expect to print 'BUBLEH! OH :('
 ```
 
+### >>trim<<
+
+removes white space from end and start of string
+
+#### Use:
+```
+<string1>.trim())
+```
+
+#### Example:
+```
+let string1 = 'Bubleh! oh :('
+console.log( string1.toUpperCase() )
+//Expect to print 'BUBLEH! OH :('
+```
+
 
 repeat
 replace
