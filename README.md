@@ -2,7 +2,7 @@
 
 ## String Methods
 
-### charAt
+### <strong>charAt</strong>
 ```
 <string>.charAt(<index>)
 ```
