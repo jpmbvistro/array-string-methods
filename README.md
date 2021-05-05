@@ -2,16 +2,24 @@
 
 ## String Methods
 
-### <strong>charAt</strong>
+### charAt
+
+Returns the character at a specified zero-based index
+
+#### Use:
 ```
 <string>.charAt(<index>)
 ```
-Returns the character at a specified zero-based index
 
-#### Example
+
+#### Example:
 ```
-let stringy = Bubleh
-console.log( stringy.charAt() )
+let stringy = Bubleh!
+console.log( stringy.charAt(2) )
+//Expect to print 'b'
+
+console.log( stringy.charAt(6) )
+//Expect to print '!'
 ```
 
 
