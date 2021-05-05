@@ -1,5 +1,10 @@
 # JS String and Array Methods for Interviewing
 
+Each Method is structured to provide EUE
+Explanation
+Use
+Example
+
 ## String Methods
 
 ### charAt
@@ -23,7 +28,25 @@ console.log( stringy.charAt(6) )
 ```
 
 
-### charCodeAt
+### charCodeAt:
+
+Returns the UTF-16 code of a character at a specified zero-based index
+
+#### Use:
+```
+<string>.charCodeAt(<index>)
+```
+
+#### Example:
+```
+let stringy = Bubleh!
+console.log( stringy.charCodeAt(2) )
+//Expect to print ''
+
+console.log( stringy.charCodeAt(6) )
+//Expect to print ''
+```
+
 concat
 includes
 indexOf
