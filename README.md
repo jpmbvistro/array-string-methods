@@ -107,7 +107,7 @@ console.log( string1.indexOf('!h') )
 
 ### >>slice<<
 
-Returns a new string extracted from a string without altering the original string using a starting index and optionally an ending index. Negative index values can be utilized to determine index positions from the end of the string
+Returns a new string extracted from a string without altering the original string using a starting index and optionally an ending index. Negative index values can be utilized to determine index positions from the end of the string. If starting index is larger than ending index, then resulting string is empty
 
 #### Use:
 ```
@@ -125,9 +125,68 @@ console.log( string1.slice(2,4) )
 //Expect to print 'bl'
 ```
 
+### >>substring<<
+
+Returns a new string extracted from a string without altering the original string using a starting index and optionally an ending index. Negative index values can be utilized to determine index positions from the end of the string. If starting index is larger than ending index, then resulting string swaps the positions.
+
+#### Use:
+```
+<string1>.substring(<starting index>)
+<string1>.substring(<starting index>, <ending index>)
+```
+
+#### Example:
+```
+let string1 = 'Bubleh!'
+console.log( string1.substring(-2) )
+//Expect to print 'h!'
+
+console.log( string1.substring(2,4) )
+//Expect to print 'bl'
+```
+
+### >>substr<<
+
+Returns a new string extracted from a string without altering the original string using a starting index and optionally a number of characters to extract. Negative length values are interpreted as 0.
+
+#### Use:
+```
+<string1>.substring(<starting index>)
+<string1>.substring(<starting index>, <ending index>)
+```
+
+#### Example:
+```
+let string1 = 'Bubleh!'
+console.log( string1.substring(1) )
+//Expect to print 'ubleh!'
+
+console.log( string1.substring(1,2) )
+//Expect to print 'ub'
+```
+
+### >>split<<
+
+Returns an array of strings from a string, utilizing a passed argument string as a delimiter. If an empty string is passed, the resulting array will contain individual characters.
+
+#### Use:
+```
+<string1>.split(<string2>)
+```
+
+#### Example:
+```
+let string1 = 'Bubuleh!'
+console.log(string1.split('u'))
+//Expect to print ['B','b','leh!']
+
+console.log( string1.split('') )
+//Expect to print ['B','u','b','u','l','e','h','!']
+```
+
 ### >>match<<
 
-Returns array of found strings that pass the regular expression argument within a string.
+Returns array of found strings that pass the regular expression argument within a string. Returns Null if nothing found
 
 #### Use:
 ```
@@ -144,14 +203,44 @@ console.log( string1.match('/([a-z])\w+/g') )
 //Expect to print ['ubleh','oh']
 ```
 
+### >>toLowerCase<<
+
+returns a new string with each letter character being lower case
+
+#### Use:
+```
+<string1>.toLowerCase())
+```
+
+#### Example:
+```
+let string1 = 'Bubleh! oh :('
+console.log( string1.toLowerCase() )
+//Expect to print 'bubleh! oh :('
+```
+
+### >>toUpperCase<<
+
+returns a new string with each letter character being upper case
+
+#### Use:
+```
+<string1>.toUpperCase())
+```
+
+#### Example:
+```
+let string1 = 'Bubleh! oh :('
+console.log( string1.toUpperCase() )
+//Expect to print 'BUBLEH! OH :('
+```
+
 
 repeat
 replace
 search
-split
-substr
-toLowerCase
-toUpperCase
+
+
 trim
 
 
