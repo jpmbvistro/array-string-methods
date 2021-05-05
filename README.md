@@ -7,7 +7,7 @@ Example
 
 ## String Methods
 
-### charAt
+### >>charAt<<
 
 Returns the character at a specified zero-based index
 
@@ -28,7 +28,7 @@ console.log( stringy.charAt(6) )
 ```
 
 
-### charCodeAt:
+### >>charCodeAt<<
 
 Returns the UTF-16 code of a character at a specified zero-based index
 
